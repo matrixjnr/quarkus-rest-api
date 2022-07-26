@@ -1,4 +1,4 @@
-package com.fjanalytiks.appstatus;
+package com.fjanalytiks.quarkus.appstatus;
 
 import org.eclipse.microprofile.health.HealthCheck;
 import org.eclipse.microprofile.health.HealthCheckResponse;

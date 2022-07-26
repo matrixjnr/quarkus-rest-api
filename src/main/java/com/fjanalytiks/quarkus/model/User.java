@@ -1,4 +1,4 @@
-package com.fjanalytiks.model;
+package com.fjanalytiks.quarkus.model;
 
 import io.quarkus.mongodb.panache.PanacheMongoEntity;
 import io.quarkus.mongodb.panache.common.MongoEntity;

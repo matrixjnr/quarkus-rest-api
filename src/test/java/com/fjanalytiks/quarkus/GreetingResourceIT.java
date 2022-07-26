@@ -1,4 +1,4 @@
-package com.fjanalytiks;
+package com.fjanalytiks.quarkus;
 
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 

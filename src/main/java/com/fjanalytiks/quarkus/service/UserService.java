@@ -1,8 +1,8 @@
-package com.fjanalytiks.service;
+package com.fjanalytiks.quarkus.service;
 
-import com.fjanalytiks.model.User;
-import com.fjanalytiks.repository.UserRepository;
-import com.fjanalytiks.resource.UserResource;
+import com.fjanalytiks.quarkus.model.User;
+import com.fjanalytiks.quarkus.repository.UserRepository;
+import com.fjanalytiks.quarkus.resource.UserResource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

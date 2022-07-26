@@ -1,4 +1,4 @@
-package com.fjanalytiks.resource;
+package com.fjanalytiks.quarkus.resource;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

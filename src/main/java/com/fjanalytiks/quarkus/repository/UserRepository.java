@@ -1,9 +1,7 @@
-package com.fjanalytiks.repository;
+package com.fjanalytiks.quarkus.repository;
 
-import com.fjanalytiks.model.User;
+import com.fjanalytiks.quarkus.model.User;
 import io.quarkus.mongodb.panache.PanacheMongoRepository;
-
-import javax.inject.Singleton;
 
 public interface UserRepository extends PanacheMongoRepository<User> {
 
