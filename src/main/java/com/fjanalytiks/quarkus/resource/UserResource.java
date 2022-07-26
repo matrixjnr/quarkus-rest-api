@@ -37,4 +37,17 @@ public class UserResource {
         userService.saveUser(user);
         return Response.ok("User saved successfully").build();
     }
+
+    //get one user by id
+    @GET
+    @Path("/{id}")
+    public Response getUserById(@PathParam("id") String id){
+        return Response.ok(userService.findUserById(id)).build();
+    }
+
+    @GET
+    @Path("/email/{email}")
+    public Response getUserByEmail(@PathParam("email") String email){
+        return Response.ok(userService.findUserByEmail(email)).build();
+    }
 }
