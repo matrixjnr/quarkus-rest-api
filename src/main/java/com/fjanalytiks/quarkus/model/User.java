@@ -1,5 +1,6 @@
 package com.fjanalytiks.quarkus.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.quarkus.mongodb.panache.PanacheMongoEntity;
 import io.quarkus.mongodb.panache.common.MongoEntity;
 import io.quarkus.runtime.annotations.RegisterForReflection;
@@ -18,6 +19,8 @@ public class User extends PanacheMongoEntity{
     private ObjectId id;
     private String name;
     private String email;
+
+    @JsonIgnore
     private String password;
 
     public User() {

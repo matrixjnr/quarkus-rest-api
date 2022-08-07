@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.NotFoundException;
 import java.util.List;
-import java.util.Optional;
 
 @ApplicationScoped
 public class UserService implements UserRepository {
@@ -20,7 +19,7 @@ public class UserService implements UserRepository {
     // Get a list of users
     public List<User> getUsers() {
         List<User> users = findAll().list();
-        LOGGER.info("Returning users in service: {}", users);
+        LOGGER.info("Returning users in service: {}", users.stream().map(User::getName).reduce("", (a, b) -> a + ", " + b));
 
         return users;
     }
